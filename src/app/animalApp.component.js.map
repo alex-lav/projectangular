@@ -1,0 +1,1 @@
+{"version":3,"file":"animalApp.component.js","sourceRoot":"","sources":["animalApp.component.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,qBAAwB,eAAe,CAAC,CAAA;AACxC,QAAO,SAAS,CAAC,CAAA;AAQjB;IAAA;IAIA,CAAC;IAVD;QAAC,gBAAS,CAAC;YACP,QAAQ,EAAE,YAAY;YACtB,SAAS,EAAE,CAAC,4BAA4B,CAAC;YACzC,WAAW,EAAE,gCAAgC;SAChD,CAAC;;0BAAA;IAMF,yBAAC;AAAD,CAAC,AAJD,IAIC;AAJY,0BAAkB,qBAI9B,CAAA"}
