@@ -1,0 +1,27 @@
+<h4>Add</h4>
+<div class="col-sm-6 col-sm-offset-3">
+  <form #form="ngForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" ngModel class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="type">Type:</label>
+      <select name="type" id="type" class="form-control" (change)="chargeType($event)" ngModel required>
+        <option>Sélectionner un choix</option>
+        <option *ngFor="let type of typeList" [value]="type.id">{{type.name}}</option>
+      </select>
+    </div>
+    <div class="form-group" *ngIf="inputMethod">
+      <label for="scale" *ngIf="inputMethod == 2">Ecailles:</label>
+      <input type="text" name="scale" id="scale" ngModel class="form-control" *ngIf="inputMethod == 2">
+
+      <label for="fur" *ngIf="inputMethod == 3">Fourrure:</label>
+      <input type="text" name="fur" id="fur" ngModel class="form-control" *ngIf="inputMethod == 3">
+
+      <label for="feathers" *ngIf="inputMethod == 4">Plumage:</label>
+      <input type="text" name="feathers" id="feathers" ngModel class="form-control" *ngIf="inputMethod == 4">
+    </div>
+  </form>
+  <button (click)="submitForm(form)" class="btn btn-default">Submit</button>
+</div>
